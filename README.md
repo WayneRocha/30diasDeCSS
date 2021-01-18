@@ -7,7 +7,7 @@
 
 ## link para acesso aos meus desafios
 
-[DesafioS 30diasdeCSS](https://waynerocha.github.io/30diasDeCSS/)
+[Desafios 30diasdeCSS](https://waynerocha.github.io/30diasDeCSS/)
 
 ## Indice dos desafios
 

@@ -1,0 +1,7 @@
+/*
+#grid-desafios div:nth-child(1){
+    background-image: url(previews_desafios/d1.jpg);
+    background-size: cover;
+}
+#grid-desafios div:nth-child(1)::after{ content: ""; }
+*/

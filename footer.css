@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300&display=swap');
+
+footer {
+    z-index: 1;
+    width: 100vw;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1b1b1b;
+    color: white;
+    font-family: arial, sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+footer p {
+    margin-top: 3vh;
+    font-family: poppins;
+}
+footer div {
+    margin-bottom: 2vh;
+}
+footer svg {
+    margin-top: 2vh;
+    width: 32px;
+    height: 32px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    filter: invert();
+    border: none;
+}
+footer svg:hover {
+    transform: scale(1.2);
+}
+@media(max-width:750px){
+    footer {
+        justify-content: center;
+        z-index: 1;
+        width: 100vw;
+        height: 20%;
+        display: flex;
+        color: white;
+        font-family: arial, sans-serif;
+    }
+    footer svg {
+        width: 7vmax;
+        height: 7vmax;
+    }
+    footer div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: row;
+    }
+    footer a {
+        margin-inline: 5vw;
+        border: none;
+        text-decoration: none;
+    }
+    footer p {
+        margin-top: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2em;
+        margin-bottom: 2vh;
+    }
+}

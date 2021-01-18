@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: max-content;
+    overflow-x: hidden;
+}
+main a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 141, 134);
+}
+main a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 129, 123);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+main a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+main{
+    display: flex;
+    max-height: min-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+#grid-desafios {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(6, auto);
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vmin;
+    column-gap: 5vmin;
+    margin-bottom: 5vh;
+    width: 100vw;
+    height: 100vh; 
+    align-items: center;
+}
+#grid-desafios div {
+    font-size: 70%;
+    width: 15vmin;
+    height: 15vmin;
+    transition: ease-in .2s;
+}
+#grid-desafios div:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(82, 82, 82);
+}
+#grid-desafios div:empty {
+    font-size: 70%;
+    width: 15vmin;
+    height: 15vmin;
+    background-color: rgb(61, 61, 61);
+    transition: ease-in .2s;
+}
+#grid-desafios div:empty:hover{
+    transform: scale(1.1);
+    background-color: rgb(78, 78, 78);
+    box-shadow: 0px 0px 10px rgb(48, 48, 48);
+}
+#grid-desafios div:empty::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '\003F';
+    color: white;
+    font-size: 5em;
+    animation: interrogation 3s ease 0s infinite normal none;
+}
+
+/*-------------RESPONSIVIDADE---------------*/
+
+@media(max-width:750px){
+    #grid-desafios{
+        grid-template-columns: repeat(5, auto);
+        margin-inline: 5vw;
+    }
+    
+}
+@media(max-width:650px){
+    #grid-desafios{
+        grid-template-columns: repeat(4, auto);
+        margin-bottom: 20vh;
+    }
+
+}
+@media(max-width:500px){
+    main h1{
+        font-size: 1.5em;
+        margin-inline: auto;
+    }
+    #grid-desafios{
+        grid-template-columns: repeat(3, auto);
+        column-gap: 10vw;
+        row-gap: 7vmin;
+        margin-bottom: 20vh;
+    }
+    #grid-desafios div {
+        width: 20vmin;
+        height: 20vmin;
+    }
+    #grid-desafios div:empty::after {
+        font-size: 2em;
+    }
+}
+
+/*-------------kEYFRAMES---------------*/
+
+@keyframes interrogation {
+    0.0%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+}
+

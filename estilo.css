@@ -57,6 +57,7 @@ main{
     width: 15vmin;
     height: 15vmin;
     transition: ease-in .2s;
+    cursor: pointer;
 }
 #grid-desafios div:hover{
     transform: scale(1.1);
@@ -89,16 +90,13 @@ main{
 @media(max-width:750px){
     #grid-desafios{
         grid-template-columns: repeat(5, auto);
-        margin-inline: 5vw;
     }
-    
 }
 @media(max-width:650px){
     #grid-desafios{
         grid-template-columns: repeat(4, auto);
         margin-bottom: 20vh;
     }
-
 }
 @media(max-width:500px){
     main h1{

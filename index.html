@@ -81,11 +81,14 @@
             if (validarPagina(URL_desafio)){
                 window.location.href = (URL_desafio);
             }else{
-                alert('pagina ainda não existe');
+                alert('página ainda não existe');
             }
         }
         function validarPagina(url){
-            return true;
+            var http = new XMLHttpRequest();
+            http.open('HEAD', url, false);
+            http.send();
+            return http.status != 404;
         }
     </script>
 </body>

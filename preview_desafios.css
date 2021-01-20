@@ -1,7 +1,7 @@
-/*
 #grid-desafios div:nth-child(1){
-    background-image: url(previews_desafios/d1.jpg);
+    background-image: url(previews_desafios/d1-preview.png);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
-#grid-desafios div:nth-child(1)::after{ content: ""; }
-*/
+#grid-desafios div:nth-child(1)::after{ content: none !important; }

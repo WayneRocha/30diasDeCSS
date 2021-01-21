@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+:root{
+    --background-color:#303030;
+    --jw-green-square:#26A639;
+    --jw-purple-square:#5B3C88;
+    --jw-blue-square:#4A6DA7;
+    --jw-orange-square:#E48515;
+    --jw-principal:#4A6DA7;
+
+    --squares-scale: .7;
+    --squares-animation-delay: .2s;
+    --squares-animation-durantion: 6s;
+
+    --jw-logo-apear-animation-durantion: 6.2s;
+}
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+.loader-box{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border-radius: 5px;
+    width: 25vw;
+    height: 25vw;
+}
+.loader div{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: scale(var(--squares-scale));
+    animation-duration: var(--squares-animation-durantion);
+    animation-timing-function: ease-in-out;
+    animation-delay: var(--squares-animation-delay);
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+.jw-logo {
+    position: fixed;
+    width: inherit;
+    height: inherit;
+    animation-name: jw-logo-apears;
+    animation-duration: var(--jw-logo-apear-animation-durantion);
+}
+.blue-part{
+    background-color: var(--jw-blue-square);
+    transform: translate(0%, 0%);
+    animation-name: bluemoviments, joinB;
+}
+.purple-part{
+    background-color: var(--jw-purple-square);
+    animation-name: purplemoviments, joinP;
+}
+.green-part{
+    background-color: var(--jw-green-square);
+    animation-name: greenmoviments, joinG;
+}
+.orange-part{
+    background-color: var(--jw-orange-square);
+    animation-name: orangemoviments, joinO;
+}
+
+/*------Keyframes of Blue-----*/
+
+@keyframes bluemoviments {
+    0% { transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    10%{ transform: translate(100%, 0%) scale(var(--squares-scale)); }
+    20%{ transform: translate(100%, 100%) scale(var(--squares-scale)); }
+    30%{ transform: translate(0%, 100%) scale(var(--squares-scale)); }
+    40%{ transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    50%{ transform: translate(100%, 0%) scale(var(--squares-scale)); }
+    60%{ transform: translate(100%, 100%) scale(var(--squares-scale)); }
+    70%{ transform: translate(0%, 100%) scale(var(--squares-scale)); }
+    80%{ transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    100%{transform: translate(0%, 0%) scale(1);}
+}
+
+/*------Keyframes of Purple-----*/
+
+@keyframes purplemoviments {
+    0% { transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    10%{ transform: translate(0%, 100%) scale(var(--squares-scale)); }
+    20%{ transform: translate(-100%, 100%) scale(var(--squares-scale)); }
+    30%{ transform: translate(-100%, 0%) scale(var(--squares-scale)); }
+    40%{ transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    50%{ transform: translate(0%, 100%) scale(var(--squares-scale)); }
+    60%{ transform: translate(-100%, 100%) scale(var(--squares-scale)); }
+    70%{ transform: translate(-100%, 0%) scale(var(--squares-scale)); }
+    80%{ transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    100%{transform: translate(0%, 0%) scale(1); }
+}
+
+/*------Keyframes of Orange-----*/
+
+@keyframes orangemoviments {
+    0% { transform: translate(0%, 0%) scale(var(--squares-scale));}
+    10%{ transform: translate(-100%, 0%) scale(var(--squares-scale));}
+    20%{ transform: translate(-100%, -100%) scale(var(--squares-scale));}
+    30%{ transform: translate(0%, -100%) scale(var(--squares-scale));}
+    40%{ transform: translate(0%, 0%) scale(var(--squares-scale));}
+    50%{ transform: translate(-100%, 0%) scale(var(--squares-scale));}
+    60%{ transform: translate(-100%, -100%) scale(var(--squares-scale));}
+    70%{ transform: translate(0%, -100%) scale(var(--squares-scale));}
+    80%{ transform: translate(0%, 0%) scale(var(--squares-scale));}
+    100%{transform: translate(0%, 0%) scale(1); }
+}
+
+/*------Keyframes of Green-----*/
+
+@keyframes greenmoviments {
+    0% { transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    10%{ transform: translate(0%, -100%) scale(var(--squares-scale)); }
+    20%{ transform: translate(100%, -100%) scale(var(--squares-scale)); }
+    30%{ transform: translate(100%, 0%) scale(var(--squares-scale)); }
+    40%{ transform: translate(0%, 0%) scale(var(--squares-scale)); }
+    50%{ transform: translate(0%, -100%) scale(var(--squares-scale)); }
+    60%{ transform: translate(100%, -100%) scale(var(--squares-scale)); }
+    70%{ transform: translate(100%, 0%) scale(var(--squares-scale)); }
+    80%{ transform: translate(0%, 0%); transform: scale(var(--squares-scale)); }
+    100%{transform: translate(0%, 0%) scale(1); }
+}
+
+/*---join to logo animation keyframes---*/
+
+@keyframes joinB{
+    0%{ border-radius: 10px; }
+    80%{ border-radius: 10px; background-color: var(--jw-blue-square);}
+    100%{ border-radius: 0px; background-color: var(--jw-principal); }
+}
+@keyframes joinP{
+    0%{ border-radius: 10px; }
+    80%{ border-radius: 10px; background-color: var(--jw-purple-square);}
+    100%{ border-radius: 0px; background-color: var(--jw-principal); }
+}
+@keyframes joinG{
+    0%{ border-radius: 10px; }
+    80%{ border-radius: 10px; background-color: var(--jw-green-square);}
+    100%{ border-radius: 0px; background-color: var(--jw-principal); }
+}
+@keyframes joinO{
+    0%{ border-radius: 10px; }
+    80%{ border-radius: 10px; background-color: var(--jw-orange-square);}
+    100%{ border-radius: 0px; background-color: var(--jw-principal); }
+}
+@keyframes jw-logo-apears{
+    0%{ opacity: 0%; }
+    95%{ opacity: 0%; }
+    100%{ opacity: 100%; }
+}

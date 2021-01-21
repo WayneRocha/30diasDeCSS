@@ -153,13 +153,7 @@ body{
     100%{ border-radius: 0px; background-color: var(--jw-principal); }
 }
 @keyframes jw-logo-apears{
-    0%{
-        opacity: 0%;
-    }
-    95%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
+    0%{ opacity: 0%; }
+    95%{ opacity: 0%; }
+    100%{ opacity: 100%; }
 }

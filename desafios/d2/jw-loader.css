@@ -20,11 +20,18 @@ body{
 }
 .loader-box{
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: var(--background-color);
     justify-content: center;
     align-items: center;
+}
+.loader-box p{
+    font-size: 1.5em;
+    color:white;
+    font-family: 'Gill Sans', sans-serif;
+    animation: legenda 1s;
 }
 .loader {
     padding: 0px;
@@ -152,8 +159,24 @@ body{
     80%{ border-radius: 10px; background-color: var(--jw-orange-square);}
     100%{ border-radius: 0px; background-color: var(--jw-principal); }
 }
+
+/*jw logo apears*/
+
 @keyframes jw-logo-apears{
     0%{ opacity: 0%; }
     95%{ opacity: 0%; }
     100%{ opacity: 100%; }
+}
+
+/*legenda*/
+
+@keyframes legenda {
+    from{
+        transform: translate(0px,50px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
 }

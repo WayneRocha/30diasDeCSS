@@ -11,40 +11,64 @@
 
 ## Indice dos desafios
 
-<div style="color: red;">
-<div style="color: green;">
+* [Dia 01 - Ícone de mídia social em camadas](#id01)
+* [Dia 02 - Loader animado](#id02)
+* [Dia 03 - Mudança de cor de texto quando entra em outra div](#id03)
+* [Dia 04 - Botão com efeito](#id04)
+* [Dia 05 - Efeito pulsar](#id05)
+* [Dia 06 - Efeito lightning text](#id06)
+* [Dia 07 - Preloader animado](#id07)  
+* [Dia 08 - Coração batendo](#id08)
+* [Dia 09 - Pendulo de Newton](#id09)
+* [Dia 10 - Animação texto alternando](#id10)
+* [Dia 11 - Botão com efeito hover](#id11)
+* [Dia 12 - Efeito de preenchimento ao passar o mouse](#id12)
+* [Dia 13 - Loading com efeito](#id13)
+* [Dia 14 - Fundo de texto animado](#id14)
+* [Dia 15 - Texto flutuante](#id15)
+* [Dia 16 - Botão com efeito](#id16)
+* [Dia 17 - Loader animado](#id17)
+* [Dia 18 - Texto esfumaçado](#id18)
+* [Dia 19 - Efeitos de animação de fundo de partículas](#id19)
+* [Dia 20 - Botão com efeito](#id20)
+* [Dia 21 - Esferas quicando](#id21)
+* [Dia 22 - Icones com efeito](#id22)
+* [Dia 23 - Botão com efeito hover](#id23)
+* [Dia 24 - Preloader animado](#id24)
+* [Dia 25 - Checkbox animado](#id25)
+* [Dia 26 - Loading com efeito](#id26)
+* [Dia 27 - Efeito pulsar](#id27)
+* [Dia 28 - Cor do background mudando](#id28)
+* [Dia 29 - Menu responsivo com Media Queries](#id29)
+* [Dia 30 - Fogos de artificio](#id30)
 
-</div> <!--concluidos-->
 
-* Dia 01 - Ícone de mídia social em camadas
-* Dia 02 - Loader animado
-* Dia 03 - Mudança de cor de texto quando entra em outra div
-* Dia 04 - Botão com efeito
-* Dia 05 - Efeito pulsar
-* Dia 06 - Efeito lightning text
-* Dia 07 - Preloader animado  
-* Dia 08 - Coração batendo
-* Dia 09 - Pendulo de Newton
-* Dia 10 - Animação texto alternando
-* Dia 11 - Botão com efeito hover
-* Dia 12 - Efeito de preenchimento ao passar o mouse
-* Dia 13 - Loading com efeito
-* Dia 14 - Fundo de texto animado
-* Dia 15 - Texto flutuante
-* Dia 16 - Botão com efeito
-* Dia 17 - Loader animado
-* Dia 18 - Texto esfumaçado
-* Dia 19 - Efeitos de animação de fundo de partículas
-* Dia 20 - Botão com efeito
-* Dia 21 - Esferas quicando
-* Dia 22 - Icones com efeito
-* Dia 23 - Botão com efeito hover
-* Dia 24 - Preloader animado
-* Dia 25 - Checkbox animado
-* Dia 26 - Loading com efeito
-* Dia 27 - Efeito pulsar
-* Dia 28 - Cor do background mudando
-* Dia 29 - Menu responsivo com Media Queries
-* Dia 30 - Fogos de artificio
+##  Desafio dia 01 - Ícone de mídia social em camadas <a name="id01"></a>
 
-</div>
+![Dia 01](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d1-vid.gif)
+
+### O que eu aprendi
+
+* Uso das propriedades:
+    * translate
+    * rotate
+    * skew
+    * !important
+
+##  Desafio dia 02 - Loader animado <a name="id02"></a>
+
+![Dia 02](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d2-vid.gif)
+
+### O que eu aprendi
+
+* Uso das propriedades:
+    * animation
+    * animation-name
+    * animation-duration
+    * animation-timing-function
+    * animation-delay 
+    * animation-direction
+    * animation-fill-mode
+* +&nbsp;Experiencia com o uso da regra <em>@keyframes</em>
+* Descoberta da ferramenta [keyframes.app](https://keyframes.app/animate/)
+

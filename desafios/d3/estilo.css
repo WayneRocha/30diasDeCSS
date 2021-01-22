@@ -1,2 +1,41 @@
 @charset "UTF-8";
 
+body{
+    margin: 0;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    position: absolute;
+    top: 38vh;
+    right: -150vw;
+    z-index: 1;
+    font-size: 10vw;
+    font-family: 'poppins', sans-serif;
+    text-overflow: clip;
+    white-space: nowrap;
+    mix-blend-mode: difference;
+    color: white;
+    animation: banner 30s linear 0s infinite;
+}
+@keyframes banner{
+    from{
+        transform: translateX(0vw);
+    }
+    to{
+        transform: translateX(-250vw);
+    }
+}
+.blue{
+    width: 50vw;
+    height: 100vh;
+    background-color: #449EF2;
+}
+.orange{
+    width: 50vw;
+    height: 100vh;
+    background-color: #F2B044;
+}

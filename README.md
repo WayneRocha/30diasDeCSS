@@ -50,10 +50,12 @@
 ### O que eu aprendi
 
 * Uso das propriedades:
+<em>
     * translate
     * rotate
     * skew
     * !important
+</em>
 
 ##  Desafio dia 02 - Loader animado <a name="id02"></a>
 
@@ -62,6 +64,7 @@
 ### O que eu aprendi
 
 * Uso das propriedades:
+<em>
     * animation
     * animation-name
     * animation-duration
@@ -69,6 +72,22 @@
     * animation-delay 
     * animation-direction
     * animation-fill-mode
+</em>
+    * variaveis com o seletor <em>:root</em>
 * +&nbsp;Experiencia com o uso da regra <em>@keyframes</em>
-* Descoberta da ferramenta [keyframes.app](https://keyframes.app/animate/)
+* Descoberta da ferramenta [<em>keyframes.app</em>](https://keyframes.app/animate/)
 
+
+##  Desafio dia 03 - Slider infinito <a name="id03"></a>
+
+![Dia 03](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d3-vid.gif)
+
+### O que eu aprendi
+
+* Uso das propriedades:
+<em>
+    * mix-blend-mode
+    * text-overflow
+    * white-space
+</em>
+    * condicional <em>orientation</em> da regra <em>@media</em>

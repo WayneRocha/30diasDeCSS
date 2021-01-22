@@ -13,3 +13,11 @@
     background-repeat: no-repeat;
 }
 #grid-desafios div:nth-child(2)::after{ content: none !important; }
+
+#grid-desafios div:nth-child(3){
+    background-image: url(previews_desafios/d3-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#grid-desafios div:nth-child(3)::after{ content: none !important; }

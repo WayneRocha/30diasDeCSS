@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root{
-    --background-color:#303030;
+    --background-color:white;
     --jw-green-square:#26A639;
     --jw-purple-square:#5B3C88;
     --jw-blue-square:#4A6DA7;
@@ -29,7 +29,7 @@ body{
 }
 .loader-box p{
     font-size: 1.5em;
-    color:white;
+    color:black;
     font-family: 'Gill Sans', sans-serif;
     animation: legenda 1s;
 }

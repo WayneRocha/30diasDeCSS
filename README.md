@@ -50,10 +50,10 @@
 ### O que eu aprendi
 
 * Uso das propriedades:
-    * translate
-    * rotate
-    * skew
-    * !important
+    * <em>translate</em>
+    * <em>rotate</em>
+    * <em>skew</em>
+    * <em>!important</em>
 
 ##  Desafio dia 02 - Loader animado <a name="id02"></a>
 

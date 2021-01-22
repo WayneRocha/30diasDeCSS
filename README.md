@@ -50,12 +50,10 @@
 ### O que eu aprendi
 
 * Uso das propriedades:
-<em>
     * translate
     * rotate
     * skew
     * !important
-</em>
 
 ##  Desafio dia 02 - Loader animado <a name="id02"></a>
 
@@ -64,15 +62,13 @@
 ### O que eu aprendi
 
 * Uso das propriedades:
-<em>
-    * animation
-    * animation-name
-    * animation-duration
-    * animation-timing-function
-    * animation-delay 
-    * animation-direction
-    * animation-fill-mode
-</em>
+    * <em>animation</em>
+    * <em>animation-name</em>
+    * <em>animation-duration</em>
+    * <em>animation-timing-function</em>
+    * <em>animation-delay </em>
+    * <em>animation-direction</em>
+    * <em>animation-fill-mode</em>
     * variaveis com o seletor <em>:root</em>
 * +&nbsp;Experiencia com o uso da regra <em>@keyframes</em>
 * Descoberta da ferramenta [<em>keyframes.app</em>](https://keyframes.app/animate/)
@@ -85,9 +81,7 @@
 ### O que eu aprendi
 
 * Uso das propriedades:
-<em>
-    * mix-blend-mode
-    * text-overflow
-    * white-space
-</em>
+    * <em>mix-blend-mode</em>
+    * <em>text-overflow</em>
+    * <em>white-space</em>
     * condicional <em>orientation</em> da regra <em>@media</em>

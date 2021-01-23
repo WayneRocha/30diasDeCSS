@@ -85,3 +85,11 @@
     * <em>text-overflow</em>
     * <em>white-space</em>
     * condicional <em>orientation</em> da regra <em>@media</em>
+
+##  Desafio dia 04 - Botão com hover effect <a name="id04"></a>
+
+![Dia 04](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d4-vid.gif)
+
+### O que eu aprendi
+
+* +&nbsp;Experiencia com a propriedade <em>box-shadow</em>

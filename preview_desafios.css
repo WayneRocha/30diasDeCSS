@@ -1,23 +1,21 @@
-#grid-desafios div:nth-child(1){
-    background-image: url(previews_desafios/d1-preview.png);
+#grid-desafios div{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#grid-desafios div:nth-child(1)::after{ content: none !important; }
+
+#grid-desafios div:nth-child(1){
+    background-image: url(previews_desafios/d1-preview.png);
+}#grid-desafios div:nth-child(1)::after{ content: none !important; }
 
 #grid-desafios div:nth-child(2){
     background-image: url(previews_desafios/d2-preview.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#grid-desafios div:nth-child(2)::after{ content: none !important; }
+}#grid-desafios div:nth-child(2)::after{ content: none !important; }
 
 #grid-desafios div:nth-child(3){
     background-image: url(previews_desafios/d3-preview.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#grid-desafios div:nth-child(3)::after{ content: none !important; }
+}#grid-desafios div:nth-child(3)::after{ content: none !important; }
+
+#grid-desafios div:nth-child(4){
+    background-image: url(previews_desafios/d4-preview.png);
+}#grid-desafios div:nth-child(4)::after{ content: none !important; }

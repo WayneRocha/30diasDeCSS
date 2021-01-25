@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 30diasDeCSS</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="preview_desafios.css">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="preview_desafios.css">
     <link rel="stylesheet" href="footer.css">
 </head>
 <body>
@@ -75,7 +75,7 @@
             </a>
         </div>
     </footer>
-    <script lang="javascript">
+    <script lang="javascript" defer>
         const challenges = document.getElementById('grid-desafios').children;
         const modalChallenge = document.getElementById('modal-box');
         const challengeName = document.getElementById('challenge-name');
@@ -136,8 +136,8 @@
                         description: 'Um botão com Hover-Effect simples'
                     },
                     {
-                        chalName: '',
-                        description: ''
+                        chalName: 'Botões com efeito pulsante',
+                        description: '2 Botões de chamada com efeito pulsante'
                     },
                     {
                         chalName: '',
@@ -282,20 +282,16 @@
             }
         }
         function runChallengeAnimation(){
-            try{
-                this.style.backgroundImage = `url('videos_desafios/${this.id}-vid.gif')`;
-            } catch {
-                console.log('preview não disponivel')
-            }
+            const delay = 250;
+            let preview = `url('videos_desafios/${this.id}-vid.gif')`;
+
+            setTimeout(() => this.style.backgroundImage = preview, delay);
         }
         function stopChallengeAnimation(){
             const delay = 1000;
+            let preview = `url('previews_desafios/${this.id}-preview.png')`;
 
-            try{
-                setTimeout(() => this.style.backgroundImage = `url('previews_desafios/${this.id}-preview.png')`, delay);
-            } catch {
-                console.log('preview não disponivel')
-            }
+            setTimeout(() => this.style.backgroundImage = preview, delay);
         }
     </script>
     <noscript>

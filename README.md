@@ -93,3 +93,12 @@
 ### O que eu aprendi
 
 * +&nbsp;Experiencia com a propriedade <em>box-shadow</em>
+
+##  Desafio dia 05 - Botão com hover effect <a name="id05"></a>
+
+![Dia 05](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d5-vid.gif)
+
+### O que eu aprendi
+
+* +&nbsp;Experiencia com a regra <em>@keyframes</em>
+* +&nbsp;Experiencia com as propriedades de <em>background</em>

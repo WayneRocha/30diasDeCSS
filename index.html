@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="footer.css">
 </head>
+
 <body>
     <main>
         <h1>Desafios - <a href="https://github.com/WayneRocha/30diasDeCSS/" target="_blank">30 Dias de CSS</a></h1>
@@ -44,52 +46,272 @@
             <div id="d29"></div>
             <div id="d30"></div>
         </div>
+        <div id="modal-box">
+            <span></span>
+            <span id="challenge-name"></span>
+            <hr>
+            <span id="challenge-description"></span>
+        </div>
     </main>
     <footer>
         <p>Direitos reservado a Wayne André&copy;</p>
         <div>
             <a href="https://github.com/WayneRocha" target="_blanck">
                 <svg viewBox="0 0 32 32" viewBox="0 0 32 32" aria-hidden="true" alt="Meu Github" title="Meu Github">
-                    <path d="M24.92 12.183c0-1.586-.604-2.864-1.585-3.83.172-.547.398-1.763-.229-3.321 0 0-1.114-.348-3.628 1.315a12.695 12.695 0 0 0-3.081-.366c-1.154 0-2.322.143-3.409.44-2.596-1.747-3.74-1.391-3.74-1.391-.748 1.847-.287 3.215-.145 3.554-.883.936-1.414 2.133-1.414 3.594 0 1.111.128 2.099.44 2.964l.325.732c.879 1.614 2.606 2.655 5.677 2.983-.434.289-.885.779-1.062 1.612-.594.28-2.475.966-3.603-.944 0 0-.633-1.148-1.842-1.235 0 0-1.174-.017-.08.722 0 0 .782.367 1.326 1.738 0 0 .705 2.342 4.114 1.593v2.417s-.076.857-.867 1.143c0 0-.469.312.034.497 0 0 2.205.174 2.205-1.604v-2.643s-.09-1.047.429-1.404v4.332s-.032 1.031-.576 1.421c0 0-.362.646.433.468 0 0 1.517-.211 1.584-1.967l.035-4.383h.363l.033 4.383c.076 1.748 1.59 1.967 1.59 1.967.793.179.429-.468.429-.468-.54-.389-.579-1.421-.579-1.421v-4.297c.52.402.436 1.369.436 1.369v2.643c0 1.777 2.2 1.604 2.2 1.604.505-.186.036-.498.036-.498-.793-.286-.867-1.143-.867-1.143v-3.461c0-1.346-.574-2.056-1.137-2.435 3.277-.318 4.845-1.368 5.572-2.99-.015.027.26-.726.26-.726.25-.859.325-1.855.325-2.963h-.002z"/>
+                    <path
+                        d="M24.92 12.183c0-1.586-.604-2.864-1.585-3.83.172-.547.398-1.763-.229-3.321 0 0-1.114-.348-3.628 1.315a12.695 12.695 0 0 0-3.081-.366c-1.154 0-2.322.143-3.409.44-2.596-1.747-3.74-1.391-3.74-1.391-.748 1.847-.287 3.215-.145 3.554-.883.936-1.414 2.133-1.414 3.594 0 1.111.128 2.099.44 2.964l.325.732c.879 1.614 2.606 2.655 5.677 2.983-.434.289-.885.779-1.062 1.612-.594.28-2.475.966-3.603-.944 0 0-.633-1.148-1.842-1.235 0 0-1.174-.017-.08.722 0 0 .782.367 1.326 1.738 0 0 .705 2.342 4.114 1.593v2.417s-.076.857-.867 1.143c0 0-.469.312.034.497 0 0 2.205.174 2.205-1.604v-2.643s-.09-1.047.429-1.404v4.332s-.032 1.031-.576 1.421c0 0-.362.646.433.468 0 0 1.517-.211 1.584-1.967l.035-4.383h.363l.033 4.383c.076 1.748 1.59 1.967 1.59 1.967.793.179.429-.468.429-.468-.54-.389-.579-1.421-.579-1.421v-4.297c.52.402.436 1.369.436 1.369v2.643c0 1.777 2.2 1.604 2.2 1.604.505-.186.036-.498.036-.498-.793-.286-.867-1.143-.867-1.143v-3.461c0-1.346-.574-2.056-1.137-2.435 3.277-.318 4.845-1.368 5.572-2.99-.015.027.26-.726.26-.726.25-.859.325-1.855.325-2.963h-.002z" />
                 </svg>
             </a>
             <a href="https://www.linkedin.com/in/wayne-andr%C3%A9-421004204/" target="_blank">
                 <svg viewBox="-5 -5 32 32" viewBox="0 0 24 24" alt="Meu perfil LinkedIn" title="Meu perfil LinkedIn">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
             </a>
             <a href="https://www.youtube.com/channel/UCXojl1lF6TLP0qM8B1eCh2Q" target="_blanck">
-                <svg viewBox="0 0 32 32" aria-hidden="true" alt="Meu canal de programação no youtube" title="Meu canal de programação no youtube">
-                    <path d="M22.396 21.104H21.2v-.707c0-.299.298-.597.596-.597h.103c.302 0 .603.298.603.597v.707h-.106zM17.795 19.6c-.298 0-.6.2-.6.498v3.405c0 .298.205.5.6.5.301 0 .602-.202.602-.5v-3.5c-.002-.203-.301-.403-.602-.403zm7.406-1.9v6.497c0 1.604-1.402 2.803-3.003 2.803H9.797c-1.6 0-2.998-1.3-2.998-2.803V17.7c0-1.599 1.301-2.802 2.998-2.802H22.1c1.699 0 3.101 1.204 3.101 2.802zm-14.502 7.204v-6.809H12.2v-.992H8.1v.992h1.299v6.899l1.3-.09zm4.501-5.8h-1.203v4.492c0 .204-.197.301-.397.301-.101 0-.302-.097-.302-.395v-4.506h-1.3V23.8c0 .298 0 .696.301.899.602.398 1.698-.096 1.901-.697v.795h1v-5.693zm4.098 4.098V20.2c0-1.203-.901-1.899-1.998-.902v-2.299h-1.302v7.799h1.001l.104-.495c1.4 1.295 2.195.397 2.195-1.101zm3.997-.402h-.99v.703c0 .298-.205.5-.509.5h-.198c-.302 0-.494-.202-.494-.5v-1.401h2.191v-2.396c-.193-1.104-1.697-1.309-2.492-.706-.203.202-.408.405-.5.706-.103.3-.207.691-.207 1.294v1.8c0 3.096 3.5 2.705 3.199 0zm-4.9-9.801c.107.203.201.3.303.399.104.104.301.104.501.104.204 0 .298-.104.504-.203.097-.097.3-.3.396-.498v.498H21.5V7.301h-1.104v4.698c0 .301-.192.502-.494.502-.301 0-.498-.201-.498-.502V7.4h-1.198v5.101c.093.197.093.3.189.498zm-4.297-3.397c0-.6 0-1 .103-1.401.097-.3.301-.599.499-.798a1.66 1.66 0 0 1 .999-.301c.3 0 .598.098.803.2.197.101.396.3.498.498.104.203.195.401.301.603 0 .199.102.5.102.998V11c0 .602 0 .999-.102 1.202 0 .299-.104.496-.301.698a1.237 1.237 0 0 1-.498.498 1.86 1.86 0 0 1-.803.201c-.298 0-.599 0-.8-.099-.199-.103-.397-.203-.5-.399a5.108 5.108 0 0 1-.299-.703c-.102-.299-.102-.7-.102-1.197l.1-1.599zm1.102 2.397c0 .301.301.603.601.603.301 0 .596-.302.596-.603V8.798c0-.301-.295-.599-.596-.599-.3 0-.601.298-.601.599v3.201zM11.3 13.6h1.3V9.001L14.2 5h-1.503L11.9 8.001 10.999 5H9.6l1.7 4.001V13.6z"/>
+                <svg viewBox="0 0 32 32" aria-hidden="true" alt="Meu canal de programação no youtube"
+                    title="Meu canal de programação no youtube">
+                    <path
+                        d="M22.396 21.104H21.2v-.707c0-.299.298-.597.596-.597h.103c.302 0 .603.298.603.597v.707h-.106zM17.795 19.6c-.298 0-.6.2-.6.498v3.405c0 .298.205.5.6.5.301 0 .602-.202.602-.5v-3.5c-.002-.203-.301-.403-.602-.403zm7.406-1.9v6.497c0 1.604-1.402 2.803-3.003 2.803H9.797c-1.6 0-2.998-1.3-2.998-2.803V17.7c0-1.599 1.301-2.802 2.998-2.802H22.1c1.699 0 3.101 1.204 3.101 2.802zm-14.502 7.204v-6.809H12.2v-.992H8.1v.992h1.299v6.899l1.3-.09zm4.501-5.8h-1.203v4.492c0 .204-.197.301-.397.301-.101 0-.302-.097-.302-.395v-4.506h-1.3V23.8c0 .298 0 .696.301.899.602.398 1.698-.096 1.901-.697v.795h1v-5.693zm4.098 4.098V20.2c0-1.203-.901-1.899-1.998-.902v-2.299h-1.302v7.799h1.001l.104-.495c1.4 1.295 2.195.397 2.195-1.101zm3.997-.402h-.99v.703c0 .298-.205.5-.509.5h-.198c-.302 0-.494-.202-.494-.5v-1.401h2.191v-2.396c-.193-1.104-1.697-1.309-2.492-.706-.203.202-.408.405-.5.706-.103.3-.207.691-.207 1.294v1.8c0 3.096 3.5 2.705 3.199 0zm-4.9-9.801c.107.203.201.3.303.399.104.104.301.104.501.104.204 0 .298-.104.504-.203.097-.097.3-.3.396-.498v.498H21.5V7.301h-1.104v4.698c0 .301-.192.502-.494.502-.301 0-.498-.201-.498-.502V7.4h-1.198v5.101c.093.197.093.3.189.498zm-4.297-3.397c0-.6 0-1 .103-1.401.097-.3.301-.599.499-.798a1.66 1.66 0 0 1 .999-.301c.3 0 .598.098.803.2.197.101.396.3.498.498.104.203.195.401.301.603 0 .199.102.5.102.998V11c0 .602 0 .999-.102 1.202 0 .299-.104.496-.301.698a1.237 1.237 0 0 1-.498.498 1.86 1.86 0 0 1-.803.201c-.298 0-.599 0-.8-.099-.199-.103-.397-.203-.5-.399a5.108 5.108 0 0 1-.299-.703c-.102-.299-.102-.7-.102-1.197l.1-1.599zm1.102 2.397c0 .301.301.603.601.603.301 0 .596-.302.596-.603V8.798c0-.301-.295-.599-.596-.599-.3 0-.601.298-.601.599v3.201zM11.3 13.6h1.3V9.001L14.2 5h-1.503L11.9 8.001 10.999 5H9.6l1.7 4.001V13.6z" />
                 </svg>
             </a>
         </div>
     </footer>
     <script lang="javascript">
-        const desafios = document.getElementById('grid-desafios').children;
+        const challenges = document.getElementById('grid-desafios').children;
+        const modalChallenge = document.getElementById('modal-box');
+        const challengeName = document.getElementById('challenge-name');
+        const challengeDescription = document.getElementById('challenge-description');
 
         addEventListenersForChallenges();
+        hideModal();
 
-        function addEventListenersForChallenges(){
-            for (let i = 0; i <= desafios.length - 1; i++){
-                desafios[i].addEventListener('click', abrirDesafio);
+        function addEventListenersForChallenges() {
+            for (let i = 0; i <= challenges.length - 1; i++) {
+                challenges[i].addEventListener('click', openChallenge);
+                challenges[i].addEventListener('mouseover', showModal);
+                challenges[i].addEventListener('mouseout', hideModal);
             }
         }
-        function abrirDesafio(){
-            var URL_desafio = "desafios/" + this.id + "/index.html";
-            
-            if (validarPagina(URL_desafio)){
-                window.location.href = (URL_desafio);
-            }else{
-                alert('página ainda não existe');
+        function openChallenge() {
+            var url_challenge = "desafios/" + this.id + "/index.html";
+
+            if (pageExist(url_challenge)) {
+                window.location.href = (url_challenge);
+            } else {
+                alert('Desafio ainda não existe');
+            }
+
+            function pageExist(url) {
+                var http = new XMLHttpRequest();
+                http.open('HEAD', url, false);
+                http.send();
+                return http.status != 404;
             }
         }
-        function validarPagina(url){
-            var http = new XMLHttpRequest();
-            http.open('HEAD', url, false);
-            http.send();
-            return http.status != 404;
+        function showModal() {
+            createModalInformation(this);
+            positionModal(this);
+            if (modalChallenge.classList.contains('invisible')) {
+                modalChallenge.classList.remove('invisible');
+            }
+            modalChallenge.classList.add('visible');
+
+            function createModalInformation(challenge) {
+                const modalContents = [
+                    {
+                        chalName: 'Ícones de mídias sociais em camadas',
+                        description: 'Ícones de redes sociais em 3D em camadas'
+                    },
+                    {
+                        chalName: 'Loading animado v1',
+                        description: 'Loading animado com tempo pré-determinado baseado nas aplicações das Testemunhas de Jeová'
+                    },
+                    {
+                        chalName: 'Slider de texto simples',
+                        description: 'Slider de texto simples em que as letras mudam de cor de acordo com a cor de fundo'
+                    },
+                    {
+                        chalName: 'Botão com efeito v1',
+                        description: 'Um botão com Hover-Effect simples'
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    },
+                    {
+                        chalName: '',
+                        description: ''
+                    }
+                ];
+
+                let challengeIndex = getChallengeIndexByYourId();
+                if (challengeExist()) {
+                    challengeName.innerText = modalContents[challengeIndex].chalName;
+                    challengeDescription.innerText = modalContents[challengeIndex].description;
+                } else {
+                    challengeName.innerText = 'desafio ainda não existe';
+                    challengeDescription.innerText = '';
+                }
+                
+                function getChallengeIndexByYourId() {
+                    return (parseInt((challenge.id).substring(1, 3))) - 1;
+                }
+                function challengeExist() {
+                    return !(modalContents[challengeIndex].chalName == '' &&
+                        modalContents[challengeIndex].description == '');
+                }
+            }
+            function positionModal(challenge) {
+                let screenWidth = window.innerWidth;
+                let screenHeight = window.innerHeight;
+                let cordenatesOfChallenge = {
+                    x: challenge.getBoundingClientRect().x,
+                    y: challenge.getBoundingClientRect().y
+                };
+                modalChallenge.style.top = (cordenatesOfChallenge.y + (screenHeight / 5.5)) + 'px';
+                modalChallenge.style.left = (cordenatesOfChallenge.x - (screenWidth / 25)) + 'px';
+            }
+        }
+        function hideModal() {
+            if (modalChallenge.classList.contains('visible')) {
+                modalChallenge.classList.remove('visible');
+            }
+            modalChallenge.classList.add('invisible');
+            removeModalInformation();
+
+            function removeModalInformation() {
+                challengeName.innerText = "";
+                challengeDescription.innerText = "";
+            }
         }
     </script>
+    <noscript>
+        <style>
+            main {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            main::after {
+                content: "Habilite o Javascript";
+                font-size: 1.5em;
+            }
+
+            #modal-box {
+                display: none;
+            }
+
+            #grid-desafios {
+                display: none;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0%;
+            }
+        </style>
+    </noscript>
 </body>
+
 </html>

@@ -7,6 +7,14 @@ body{
     height: max-content;
     overflow-x: hidden;
 }
+main{
+    display: flex;
+    max-height: min-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
 main a {
     position: relative;
     text-decoration: none;
@@ -30,14 +38,6 @@ main a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-}
-main{
-    display: flex;
-    max-height: min-content;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
 }
 #grid-desafios {
     display: grid;
@@ -83,6 +83,46 @@ main{
     color: white;
     font-size: 5em;
     animation: interrogation 3s ease 0s infinite normal none;
+}
+
+/*---------------MODAL-BOX------------------*/
+
+#modal-box{
+    position: fixed;
+    min-width: min-content;
+    max-height: min-content;
+    max-width: 25vw;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px black;
+}
+#span{
+    width:0px;
+    height:0px;
+    border:100px solid;
+    border-bottom-color:lightblue;
+}
+#modal-box hr {
+    width: 90%;
+    height: 1%;
+    margin-inline-start: 0%;
+    color: #000000;
+}
+#modal-box #challenge-name{
+    font-weight: bold;
+    text-overflow: clip;
+    font-size: 1rem;
+}
+#modal-box #challenge-description{
+    font-size: 1rem;
+}
+.invisible{
+    filter: opacity(1);
+    animation: apear .2s ease-out .5s;
+}
+.invisible{
+    filter:opacity(0);
+    animation: disappear .2s ease-out .5s;
 }
 
 /*-------------RESPONSIVIDADE---------------*/
@@ -132,3 +172,19 @@ main{
     }
 }
 
+@keyframes apear {
+    from {
+        filter:opacity(0);
+    }
+    to{
+        filter:opacity(1);
+    }
+}
+@keyframes disappear {
+    from {
+        filter:opacity(1);
+    }
+    to{
+        filter:opacity(0);
+    }
+}

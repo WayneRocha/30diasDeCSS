@@ -118,11 +118,9 @@ main a:hover:before {
 }
 .invisible{
     filter: opacity(1);
-    animation: apear .2s ease-out .5s;
 }
 .invisible{
     filter:opacity(0);
-    animation: disappear .2s ease-out .5s;
 }
 
 /*-------------RESPONSIVIDADE---------------*/
@@ -169,22 +167,5 @@ main a:hover:before {
     }
     50%{
         transform: rotate(5deg);
-    }
-}
-
-@keyframes apear {
-    from {
-        filter:opacity(0);
-    }
-    to{
-        filter:opacity(1);
-    }
-}
-@keyframes disappear {
-    from {
-        filter:opacity(1);
-    }
-    to{
-        filter:opacity(0);
     }
 }

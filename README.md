@@ -102,3 +102,10 @@
 
 * +&nbsp;Experiencia com a regra <em>@keyframes</em>
 * +&nbsp;Experiencia com as propriedades de <em>background</em>
+
+![Dia 06](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d6-vid.gif)
+
+### O que eu aprendi
+
+* +&nbsp;Experiencia com a regra <em>@keyframes</em>
+* +&nbsp;Experiencia com as propriedades <em>animation</em>

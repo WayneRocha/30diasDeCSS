@@ -24,3 +24,7 @@
 #grid-desafios div:nth-child(5){
     background-image: url(previews_desafios/d5-preview.png);
 }#grid-desafios div:nth-child(5)::after{ content: none !important; }
+
+#grid-desafios div:nth-child(6){
+    background-image: url(previews_desafios/d6-preview.png);
+}#grid-desafios div:nth-child(6)::after{ content: none !important; }

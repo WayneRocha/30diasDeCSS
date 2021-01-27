@@ -78,8 +78,8 @@
     <script lang="javascript" defer>
         const challenges = document.getElementById('grid-desafios').children;
         const modalChallenge = document.getElementById('modal-box');
-        const challengeName = document.getElementById('challenge-name');
-        const challengeDescription = document.getElementById('challenge-description');
+        const modalChallengeName = document.getElementById('challenge-name');
+        const modalChallengeDescription = document.getElementById('challenge-description');
 
         addEventListenersForChallenges();
         hideModal();
@@ -243,11 +243,11 @@
 
                 let challengeIndex = getChallengeIndexByYourId();
                 if (challengeExist()) {
-                    challengeName.innerText = modalContents[challengeIndex].chalName;
-                    challengeDescription.innerText = modalContents[challengeIndex].description;
+                    modalChallengeName.innerText = modalContents[challengeIndex].chalName;
+                    modalChallengeDescription.innerText = modalContents[challengeIndex].description;
                 } else {
-                    challengeName.innerText = 'desafio ainda não existe';
-                    challengeDescription.innerText = '';
+                    modalChallengeName.innerText = 'desafio ainda não existe';
+                    modalChallengeDescription.innerText = '';
                 }
                 
                 function getChallengeIndexByYourId() {
@@ -277,8 +277,8 @@
             removeModalInformation();
 
             function removeModalInformation() {
-                challengeName.innerText = "";
-                challengeDescription.innerText = "";
+                modalChallengeName.innerText = "";
+                modalChallengeDescription.innerText = "";
             }
         }
         function runChallengeAnimation(){

@@ -37,8 +37,8 @@
                     hearth.style.animationPlayState = 'paused';
                 }
                 function applyDamageAnimation(){
-                    hearth.classList.add('damage');
-                    setTimeout(() => hearth.classList.remove('damage'), 500);
+                    hearth.classList.toggle('damage');
+                    setTimeout(() => hearth.classList.toggle('damage'), 500);
                 }
                 function startAnimation(){
                     hearth.style.animationPlayState = 'running';

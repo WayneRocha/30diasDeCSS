@@ -123,6 +123,13 @@ main a:hover:before {
     filter:opacity(0);
 }
 
+.does_not_exist{
+    animation: shake .2s ease-out;
+}
+.does_not_exist #challenge-name{
+    color: red;
+}
+
 /*-------------RESPONSIVIDADE---------------*/
 
 @media(max-width:750px){
@@ -167,5 +174,22 @@ main a:hover:before {
     }
     50%{
         transform: rotate(5deg);
+    }
+}
+@keyframes shake {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 7px;
+    }
+    50% {
+        margin-left: 0;
+    }
+    75% {
+        margin-left: -7px;
+    }
+    100% {
+        margin-left: 0;
     }
 }

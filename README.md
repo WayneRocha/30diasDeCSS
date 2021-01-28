@@ -109,3 +109,23 @@
 
 * +&nbsp;Experiencia com a regra <em>@keyframes</em>
 * +&nbsp;Experiencia com as propriedades <em>animation</em>
+
+![Dia 07](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d7-vid.gif)
+
+### O que eu aprendi
+
+* +&nbsp;Experiencia com a regra <em>@keyframes</em>
+* +&nbsp;Experiencia com as propriedades <em>animation</em>
+
+![Dia 07](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d7-vid.gif)
+
+### O que eu aprendi
+
+* Uso da propriedade:
+    * <em>transform-origin</em>
+* +&nbsp;Experiencia com a propriedade <em>border</em> e <em>border-radius</em>
+* +&nbsp;Experiencia com a propriedade <em>position</em>
+* +&nbsp;Experiencia com a propriedades <em>linear-gradient</em> e <em>radial-gradient</em>
+* +&nbsp;Experiencia com <em>medidas relativas</em>
+* +&nbsp;Experiencia com a regra <em>@keyframes</em>
+* +&nbsp;Experiencia com as propriedades <em>animation</em>

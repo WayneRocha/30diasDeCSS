@@ -97,7 +97,7 @@
             var url_challenge = "desafios/" + this.id + "/index.html";
 
             if (pageExist(url_challenge)) {
-                window.location.href = (url_challenge);
+                window.open(url_challenge, "_blanck");
             } else {
                 alert('Desafio ainda não existe');
             }

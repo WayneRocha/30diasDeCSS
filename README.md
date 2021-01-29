@@ -94,7 +94,7 @@
 
 * +&nbsp;Experiencia com a propriedade <em>box-shadow</em>
 
-##  Desafio dia 05 - Botão com hover effect <a name="id05"></a>
+##  Desafio dia 05 - Pulse effect <a name="id05"></a>
 
 ![Dia 05](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d5-vid.gif)
 
@@ -103,6 +103,8 @@
 * +&nbsp;Experiencia com a regra <em>@keyframes</em>
 * +&nbsp;Experiencia com as propriedades de <em>background</em>
 
+##  Desafio dia 06 - Efeito lightning text <a name="id06"></a>
+
 ![Dia 06](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d6-vid.gif)
 
 ### O que eu aprendi
@@ -110,19 +112,32 @@
 * +&nbsp;Experiencia com a regra <em>@keyframes</em>
 * +&nbsp;Experiencia com as propriedades <em>animation</em>
 
+##  Desafio dia 07 - Preloader animado <a name="id07"></a>
+
 ![Dia 07](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d7-vid.gif)
+
+### O que eu aprendi
+
+
+##  Desafio dia 08 - Coração batendo <a name="id08"></a>
+
+![Dia 08](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d8-vid.gif)
 
 ### O que eu aprendi
 
 * +&nbsp;Experiencia com a regra <em>@keyframes</em>
 * +&nbsp;Experiencia com as propriedades <em>animation</em>
 
-![Dia 07](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d7-vid.gif)
+##  Desafio dia 09- Pendulo de Newton <a name="id09"></a>
+
+![Dia 09](https://github.com/WayneRocha/30diasDeCSS/blob/main/videos_desafios/d9-vid.gif)
 
 ### O que eu aprendi
 
-* Uso da propriedade:
+* Uso das propriedades:
     * <em>transform-origin</em>
+* Uso dos pseudo-elementos:
+    * <em>::before</em> e <em>::after</em>
 * +&nbsp;Experiencia com a propriedade <em>border</em> e <em>border-radius</em>
 * +&nbsp;Experiencia com a propriedade <em>position</em>
 * +&nbsp;Experiencia com a propriedades <em>linear-gradient</em> e <em>radial-gradient</em>

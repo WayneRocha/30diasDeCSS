@@ -40,3 +40,7 @@
 #grid-desafios div:nth-child(9){
     background-image: url(previews_desafios/d9-preview.png);
 }#grid-desafios div:nth-child(9)::after{ content: none !important; }
+
+#grid-desafios div:nth-child(10){
+    background-image: url(previews_desafios/d10-preview.png);
+}#grid-desafios div:nth-child(10)::after{ content: none !important; }

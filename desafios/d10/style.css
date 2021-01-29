@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    background-color: aqua;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: monospace;
+    font-size: 10vmin;
+    white-space: nowrap;
+}
+span::before{
+    content: '';
+    font-size: 1em;
+    animation: words-animation 10s linear infinite;
+}
+@keyframes words-animation{
+    0%{
+        content: 'n';
+    }
+    1%{
+        content: 'no ';
+    }
+    2%{
+        content: 'no 💻';
+    }
+    30%{
+        content: 'no 📱';
+    }
+    60%{
+        content: 'na 📺';
+    }
+    90%{
+        content: 'em TUDO!';
+    }
+    98%{
+        content: 'em';
+    }
+    99%{
+        content: 'e';
+    }
+    100%{
+        content: '';
+    }
+}

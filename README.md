@@ -118,6 +118,8 @@
 
 ### O que eu aprendi
 
+* +&nbsp;Experiencia com a regra <em>@keyframes</em>
+* +&nbsp;Experiencia com as propriedades <em>animation</em>
 
 ##  Desafio dia 08 - Coração batendo <a name="id08"></a>
 

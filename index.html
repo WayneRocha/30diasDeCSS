@@ -247,11 +247,11 @@
 
                 let challengeIndex = getChallengeIndexByYourId();
                 if (challengeExist()) {
-                    modalChallengeName.innerText = modalContents[challengeIndex].chalName;
-                    modalChallengeDescription.innerText = modalContents[challengeIndex].description;
+                    modalChallengeName.innerHTML = modalContents[challengeIndex].chalName;
+                    modalChallengeDescription.innerHTML = modalContents[challengeIndex].description;
                 } else {
-                    modalChallengeName.innerText = 'desafio ainda não existe';
-                    modalChallengeDescription.innerText = '';
+                    modalChallengeName.innerHTML = 'desafio ainda não existe';
+                    modalChallengeDescription.innerHTML = '';
                 }
                 
                 function getChallengeIndexByYourId() {

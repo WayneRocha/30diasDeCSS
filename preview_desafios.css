@@ -31,7 +31,7 @@
 
 #grid-desafios div:nth-child(7){
     background-image: url(previews_desafios/d7-preview.png);
-}#grid-desafios div:nth-child(7)::after{ /*content: none !important;*/ }
+}#grid-desafios div:nth-child(7)::after{ content: none !important; }
 
 #grid-desafios div:nth-child(8){
     background-image: url(previews_desafios/d8-preview.png);
